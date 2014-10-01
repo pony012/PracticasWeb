@@ -6,8 +6,10 @@
 </head>
 <body>
 	<p>Se insertó el usuario</p>
-	<p><?php
-		print_r($this->model);
-	?></p>
+	<p>
+	<?php
+		print_r($data);
+	?>
+	</p>
 </body>
 </html>
