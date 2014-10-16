@@ -5,6 +5,14 @@ body{
 *{
 	font-family: Helvetica;
 }
+@font-face{
+	font-family: Windsong;
+	src: url(Windsong-webfont.otf);
+}
+@font-face{
+	font-family: Diesel;
+	src: url(Diesel-Rudolf_reduced.otf);
+}
 /*
 *{
 	border: .08em solid black;
@@ -25,10 +33,12 @@ aside, section{
 .left{
 	width: 20%;
 	float: left;
+	margin-bottom: 1em;
 }
 .right{
-	width: 13%;
+	width: 12%;
 	float: right;
+	margin-bottom: 1em;
 }
 
 section{
@@ -37,10 +47,66 @@ section{
 	margin-right: 1%;
 }
 
+aside{
+	text-align: justify;
+}
+
 footer{
 	width: 100%;
 	margin-top: 1%;
+	clear: both;
 }
 p, h1{
 	text-align: center;
+}
+
+cite{
+	font-family: Windsong, Helvetica;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+code, kbd{
+	font-family: "Courier New";
+	font-size: .8em;
+}
+pre{
+	background: lightgray;
+	color: black;
+}
+kbd{
+	background: black;
+	color: green;
+	font-weight: 600;
+	font-style: italic;
+}
+blockquote{
+	font-family: Diesel;
+	font-size: 2em;
+	line-height: 1em;
+	color: #333;
+	text-shadow: 0.01em 0.04em #000;
+}
+blockquote:first-letter{
+	font-size: 2.5em;
+}
+abbr{
+	text-decoration: underline;
+}
+.footer-p{
+	text-transform: capitalize;
+}
+.right{
+	letter-spacing: .1em;
+	line-height: 1.5em;
+}
+.column{
+	-webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+	column-gap: 40px;
+	-webkit-column-gap: 40px;
+	-moz-column-gap: 40px;
+	column-rule: 2px outset black;
+	-moz-column-rule: 2px outset black;
+	-webkit-column-rule: 2px outset black;
 }
