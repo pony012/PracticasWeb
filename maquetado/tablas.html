@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tablas</title>
+	<style>
+		table, th{
+			border: 1px solid gray;
+		}
+		table{
+			border-spacing: 5px;
+			border-radius: 10px;
+		}
+		td, th{
+			border: 1px solid gray;
+			text-align: center;
+			vertical-align: top;
+			border-radius: 10px;
+		}
+		td:hover, th:hover{
+			background-color: #ccc;
+		}
+		.conferencia{
+			background-color: #009688;
+		}
+		.conferencia:hover{
+			background-color: #00796b;
+		}
+		.taller{
+			background-color: #ff5722;
+		}
+		.taller:hover{
+			background-color: #e64a19;
+		}
+		.informal{
+			background-color: #8bc34a;
+		}
+		.informal:hover{
+			background-color: #689f38;
+		}
+		.tutorial{
+			background-color: #cddc39;
+		}
+		.tutorial:hover{
+			background-color: #afb42b;
+		}
+		.magistral{
+			background-color: #607d8b;
+		}
+		.magistral:hover{
+			background-color: #455a64;
+		}
+
+
+	</style>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Hora</th>
+				<th>Salón 1</th>
+				<th>Salón 2</th>
+				<th>Salón 3</th>
+				<th>Salón 4</th>
+				<th>Salón 5</th>
+				<th>Salón 6</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>09:00</th>
+				<td colspan="6" ></td>
+			</tr>
+			<tr>
+				<th>10:00</th>
+				<td colspan="6" ></td>
+			</tr>
+			<tr>
+				<th>11:00</th>
+				<td colspan="6" ></td>
+			</tr>
+			<tr>
+				<th>12:00</th>
+				<td colspan="6" >Inauguración</td>
+			</tr>
+			<tr>
+				<th>13:00</th>
+				<td class="magistral" colspan="6" ><a href="http://fsl.mx/2014/ponentes-magistrales?qt-view__clone_of_conferencias__page=0#qt-view__clone_of_conferencias__page" target="blank">Dedicated to developers</a><br/><strong>Alexis Crewell</strong></td>
+			</tr>
+			<tr>
+				<th>14:00</th>
+				<td colspan="6" >Receso para comida</td>
+			</tr>
+			<tr>
+				<th>15:00</th>
+				<td colspan="6" ></td>
+			</tr>
+			<tr>
+				<th>16:00</th>
+				<td class="informal">Omar Alva.</td>
+				<td class="tutorial" rowspan="2" >OpenVPN<br/><em>* Richard Couture</em><br/><strong>Tutorial</strong></td>
+				<td class="conferencia"><a href="http://fsl.mx/2014/fsl-2014/sessions/optimizaci%C3%B3n-web-de-alto-rendimiento" target="blank">Optimización web de alto rendimiento</a><br/><em>* Fernando Perales</em><br/><strong>Conferencia</strong><br/>Intermediate</td>
+				<td class="conferencia"><a href="http://fsl.mx/2014/fsl-2014/sessions/de-los-fierros-la-nube-la-evoluci%C3%B3n-de-un-sysadmin" target="blank">De los fierros a la nube - La evolución de un sysadmin</a><br/><em>* Kwame Bahena</em><br/><strong>Conferencia</strong><br/>Intermediate</td>
+				<td class="taller" rowspan="3" ><a href="http://fsl.mx/2014/fsl-2014/sessions/vacaciones-yo-si-se-puede-usa-cfengine" target="blank">Vacaciones, yo?? Si se puede: Usa CFEngine</a><br/><em>* Felipe Sanchez</em><br/><strong>Taller</strong><br/>Intermediate</td>
+				<td class="taller" rowspan="3" ><a href="http://fsl.mx/2014/fsl-2014/sessions/ceph-almacenamiento-distribuido-de-bajo-costo-y-alto-performance">Ceph, almacenamiento distribuido de bajo costo y alto performance </a><br/><em>* Rolando Cedillo</em><br/><strong>Taller</strong><br/>Intermediate</td>
+			</tr>
+			<tr>
+				<th>17:00</th>
+				<td class="informal"><a href="http://fsl.mx/2014/sessions/algunas-buenas-practicas-para-un-sevidor-de-correo-postfix" target="blank">Algunas buenas practicas para un servidor de correo postfix </a><br/><em>* Dave G</em><br/><strong>Platica Informal</strong><br/>Intermediate</td>
+				<td class="informal"><a href="http://fsl.mx/2014/fsl-2014/sessions/el-programador-que-odiaba-los-servidores" target="blank">El programador que odiaba los servidores </a><br/><em>* Michelle Torres</em><br/><strong>Platica Informal</strong></td>
+				<td class="conferencia" rowspan="2" ><a href="http://fsl.mx/2014/fsl-2014/sessions/remplazando-servidores-windows-por-linux-pero-esta-vez-en-serio" target="blank">Remplazando servidores windows por linux (pero esta vez en serio)</a><br/><em>* Andres Tello</em><br/><strong>Conferencia</strong><br/>Intermediate</td>
+			</tr>
+			<tr>
+				<th>18:00</th>
+				<td class="conferencia"><a href="http://fsl.mx/2014/fsl-2014/sessions/virtualizaci%C3%B3n-ligera-con-docker" target="blank">Virtualización ligera con Docker </a><br/><em>* Ivan Chavero</em><br/><strong>Conferencia</strong><br/>Intermediate</td>
+				<td class="conferencia"><a href="http://fsl.mx/2014/fsl-2014/sessions/ansible-por-que-configurar-y-complicar-no-tienen-que-ir-de-la-mano" target="blank">Ansible, Por que configurar y complicar no tienen que ir de la mano </a><br/><em>* Jorge Medrano</em><br/><strong>Conferencia</strong><br/>Beginner</td>
+				<td class="conferencia"><a href="http://fsl.mx/2014/fsl-2014/sessions/el-syadmin-como-un-arquitecto" target="blank">El syadmin como un arquitecto </a><br/><em>* Gabriel Orozco</em><br/><strong>Conferencia</strong><br/>Beginner</td>
+			</tr>
+			<tr>
+				<th>19:00</th>
+				<td class="magistral" colspan="6" ><strong>Evento Social de Intel</strong><br/>FSL Community Reception Hosted by Platinum Sponsor,<br/>Intel Corporation</td>
+			</tr>
+			<tr>
+				<th>20:00</th>
+				<td colspan="6"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
